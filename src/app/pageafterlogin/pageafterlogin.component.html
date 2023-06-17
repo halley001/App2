@@ -1,0 +1,69 @@
+
+
+<mat-toolbar>
+  <h1>Application Dashboard</h1>
+</mat-toolbar>
+
+
+<mat-drawer-container class="mat-elevation-z8">
+
+<mat-drawer #sidenav="matDrawer" mode="side" opened>
+
+  <mat-list-item role="listitem">
+  <img
+  class="avatar mat-elevation-z8"
+  src="https://source.unsplash.com/c_GmwfHBDzk/200x200"
+/>
+</mat-list-item>
+
+<h4 class="name">John Smith</h4>
+<p class="designation">Software Engineer</p>
+
+<mat-divider></mat-divider>
+
+  <mat-list role="list">
+
+    <mat-list-item role="listitem">
+      <button mat-button class="menu-button">
+        <mat-icon>home</mat-icon>
+        <span class="">Home</span>
+      </button>
+    </mat-list-item>
+
+    <mat-list-item role="listitem">
+      <button mat-button class="menu-button">
+        <mat-icon>person</mat-icon>
+        <span>Profile</span>
+      </button>
+    </mat-list-item>
+
+    <mat-list-item role="listitem">
+      <button mat-button class="menu-button">
+        <mat-icon>info</mat-icon>
+        <span>About</span>
+      </button>
+    </mat-list-item>
+
+    <mat-list-item role="listitem">
+      <button mat-button class="menu-button">
+        <mat-icon>logout</mat-icon>
+        <span>Sign-Out</span>
+      </button>
+    </mat-list-item>
+
+  </mat-list>
+
+  <mat-divider></mat-divider>
+
+  <button mat-button class="menu-button">
+    <mat-icon>help</mat-icon>
+    <span>Help</span>
+  </button>
+
+</mat-drawer>
+  
+ 
+  <mat-drawer-content>
+    <div class="content mat-elevation-z8 " >Main content here!</div>
+  </mat-drawer-content>
+</mat-drawer-container>
