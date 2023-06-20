@@ -1,0 +1,44 @@
+<div class="sidenav" [ngClass]="collapsed? 'sidenav-collapsed': ''">
+  <div class="logo-container">
+    <button class="logo"(click)="toggleCollapse()">A</button>
+    <div class="logo-text" *ngIf="collapsed">Welcome</div>
+      <button type="button" class="btn-close" *ngIf="collapsed" (click)="closeSidenav()">
+      <mat-icon>close</mat-icon>
+    </button>
+  </div>
+  <ul class="sidenav-nav">
+    <li class="sidenav-nav-item">
+
+      <a class="sidenav-nav-link" [routerLink]="['/app-appdash']">
+      <mat-icon class="sidenav-link-icon">home</mat-icon>
+         <span class="sidenav-link-text"*ngIf="collapsed">Dashboard</span>
+      </a>
+
+      <a class="sidenav-nav-link" [routerLink]="['/app-media']">
+      <mat-icon class="sidenav-link-icon">camera-retro</mat-icon>
+         <span class="sidenav-link-text"*ngIf="collapsed">Media</span>
+      </a>
+
+      <a class="sidenav-nav-link" [routerLink]="['/app-pages']">
+      <mat-icon class="sidenav-link-icon">folder</mat-icon>
+         <span class="sidenav-link-text"*ngIf="collapsed">pages</span>
+      </a>
+
+      <a class="sidenav-nav-link" [routerLink]="['/app-statistics']">
+      <mat-icon class="sidenav-link-icon">stairs</mat-icon>
+         <span class="sidenav-link-text"*ngIf="collapsed">Statistics</span>
+      </a>
+
+      <a class="sidenav-nav-link" [routerLink]="['/app-coupons']">
+      <mat-icon class="sidenav-link-icon">tags</mat-icon>
+         <span class="sidenav-link-text"*ngIf="collapsed">Coupons</span>
+      </a>
+
+      <a class="sidenav-nav-link" [routerLink]="['/app-settings']">
+      <mat-icon class="sidenav-link-icon">settings</mat-icon>
+         <span class="sidenav-link-text"*ngIf="collapsed">Settings</span>
+      </a>
+
+    </li>
+  </ul>
+</div>

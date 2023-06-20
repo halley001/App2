@@ -1,1 +1,8 @@
-<router-outlet></router-outlet>
+
+<app-main-nav>(onTogglesideNav)="onTogglesideNav($event)"</app-main-nav>
+<app-body 
+[collapsed]="isSaideNavCollapsed"
+[screenWidth]="screenWidth"
+></app-body> 
+
+

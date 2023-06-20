@@ -17,6 +17,17 @@ import {AppdashComponent } from './appdash/appdash.component';
 import {BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatListModule} from '@angular/material/list';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import { MainNavComponent } from './main-nav/main-nav.component';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+import { SettingsComponent } from './settings/settings.component';
+import { StatisticsComponent } from './statistics/statistics.component';
+import { PagesComponent } from './pages/pages.component';
+import { ProductsComponent } from './products/products.component';
+import { MediaComponent } from './media/media.component';
+import { CouponsComponent } from './coupons/coupons.component';
+import { BodyComponent } from './body/body.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 
@@ -26,7 +37,16 @@ import {MatButtonToggleModule} from '@angular/material/button-toggle';
     AppComponent,
     LoginpageComponent,
     PageafterloginComponent,
-    AppdashComponent
+    AppdashComponent,
+    MainNavComponent,
+    SettingsComponent,
+    StatisticsComponent,
+    PagesComponent,
+    ProductsComponent,
+    MediaComponent,
+    CouponsComponent,
+    BodyComponent
+  
   ],
   imports: [
     BrowserModule,
@@ -41,7 +61,10 @@ import {MatButtonToggleModule} from '@angular/material/button-toggle';
     MatIconModule,
     BrowserAnimationsModule,
     MatListModule,
-    MatButtonToggleModule
+    MatButtonToggleModule,
+    MatPaginatorModule,
+    MatSortModule,
+    FontAwesomeModule
 
   ],
   providers: [],

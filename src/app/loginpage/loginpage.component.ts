@@ -50,7 +50,7 @@ export class LoginpageComponent {
    if (usersHavingGivenEmail.length > 0) {
      if (usersHavingGivenEmail[0].password === this.loginObj.password) {
        localStorage.setItem('user', JSON.stringify(usersHavingGivenEmail[0]));
-       window.location.assign("/pageafterlogin");
+       window.location.assign("/main-nav");
        alert('Login Success');
        this.loginObj = {
          email: '',
